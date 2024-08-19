@@ -1,0 +1,304 @@
+.shop {
+  padding: 50px 100px;
+  .shop-title {
+    display: flex;
+    gap: 10px;
+    .new {
+      @include button;
+    }
+    .best {
+      @include button;
+    }
+    .all {
+      text-decoration: underline;
+      color: black;
+      padding: 7px 0px;
+      text-align: center;
+      font-size: 24px;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+  .shop-home {
+    padding: 20px 0px 0px 0px;
+    .shop-1 {
+      &:hover {
+        border: 1px solid black;
+        .price-1 {
+          top: 156%;
+        }
+      }
+      .sneaker-1 {
+        position: relative;
+      }
+      .hearts-1 {
+        .full-heart-1 {
+          position: absolute;
+          top: 120%;
+          left: 25%;
+        }
+        .heart-1 {
+          position: absolute;
+          top: 120%;
+          left: 25%;
+          &:hover {
+            display: none;
+            .love-1 {
+              display: flex;
+            }
+          }
+        }
+      }
+      .price-1 {
+        @include price;
+        position: absolute;
+        top: 157%;
+        left: 7%;
+      }
+      .shop-1-title {
+        padding: $padding;
+        .ultraboost-1 {
+          @include ultraboost;
+        }
+        .pfrmnc-1 {
+          @include performance;
+        }
+      }
+    }
+    .sneaker-2 {
+      position: relative;
+    }
+    .shop-2 {
+      &:hover {
+        border: 1px solid black;
+        .price-2 {
+          top: 156%;
+        }
+      }
+      .hearts-2 {
+        .full-heart-2 {
+          position: absolute;
+          top: 120%;
+          left: 47%;
+        }
+        .heart-2 {
+          position: absolute;
+          top: 120%;
+          left: 47%;
+          &:hover {
+            display: none;
+            .love-1 {
+              display: flex;
+            }
+          }
+        }
+      }
+      .price-2 {
+        @include price;
+        position: absolute;
+        top: 157%;
+        left: 29%;
+      }
+      .shop-2-title {
+        padding: $padding;
+        .ultraboost-2 {
+          @include ultraboost;
+        }
+        .pfrmnc-2 {
+          @include performance;
+        }
+      }
+    }
+    .sneaker-3 {
+      position: relative;
+    }
+    .shop-3 {
+      &:hover {
+        border: 1px solid black;
+        .price-3 {
+          top: 156%;
+        }
+      }
+      .hearts-3 {
+        .full-heart-3 {
+          position: absolute;
+          top: 120%;
+          left: 69%;
+        }
+        .heart-3 {
+          position: absolute;
+          top: 120%;
+          left: 69%;
+          &:hover {
+            display: none;
+            .love-1 {
+              display: flex;
+            }
+          }
+        }
+      }
+      .price-3 {
+        @include price;
+        position: absolute;
+        top: 157%;
+        left: 51%;
+      }
+      .shop-3-title {
+        padding: $padding;
+        .ultraboost-3 {
+          @include ultraboost;
+        }
+        .pfrmnc-3 {
+          @include performance;
+        }
+      }
+    }
+    .sneaker-4 {
+      position: relative;
+    }
+    .shop-4 {
+      &:hover {
+        border: 1px solid black;
+        .price-4 {
+          top: 156%;
+        }
+      }
+      .hearts-4 {
+        .full-heart-4 {
+          position: absolute;
+          top: 120%;
+          left: 90%;
+        }
+        .heart-4 {
+          position: absolute;
+          top: 120%;
+          left: 90%;
+          &:hover {
+            display: none;
+            .love-1 {
+              display: flex;
+            }
+          }
+        }
+      }
+      .price-4 {
+        @include price;
+        position: absolute;
+        top: 157%;
+        left: 73%;
+      }
+      .shop-4-title {
+        padding: $padding;
+        .ultraboost-4 {
+          @include ultraboost;
+        }
+        .pfrmnc-4 {
+          @include performance;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  #shop {
+    .container {
+      .shop {
+        padding: 20px 10px 0px 10px;
+        .shop-home {
+          .row {
+            .col-sm-6 {
+              width: 50%;
+              .shop-1 {
+                .full-heart-1 {
+                  display: none;
+                }
+                .heart-1 {
+                  display: none;
+                }
+                .price-1 {
+                  display: none;
+                }
+                .shop-1-title {
+                  .ultraboost-1 {
+                    font-size: 13px;
+                  }
+                  .pfrmnc-1 {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+            .col-sm-6 {
+              width: 50%;
+              .shop-2 {
+                .full-heart-2 {
+                  display: none;
+                }
+                .heart-2 {
+                  display: none;
+                }
+                .price-2 {
+                  display: none;
+                }
+                .shop-2-title {
+                  .ultraboost-2 {
+                    font-size: 13px;
+                  }
+                  .pfrmnc-2 {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+            .col-sm-6 {
+              width: 50%;
+              .shop-3 {
+                .full-heart-3 {
+                  display: none;
+                }
+                .heart-3 {
+                  display: none;
+                }
+                .price-3 {
+                  display: none;
+                }
+                .shop-3-title {
+                  .ultraboost-3 {
+                    font-size: 13px;
+                  }
+                  .pfrmnc-3 {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+            .col-sm-6 {
+              width: 50%;
+              .shop-4 {
+                .full-heart-4 {
+                  display: none;
+                }
+                .heart-4 {
+                  display: none;
+                }
+                .price-4 {
+                  display: none;
+                }
+                .shop-4-title {
+                  .ultraboost-4 {
+                    font-size: 13px;
+                  }
+                  .pfrmnc-4 {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

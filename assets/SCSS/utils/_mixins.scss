@@ -1,0 +1,35 @@
+@mixin text {
+  top: 93%;
+  background-color: #ffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+@mixin ultraboost {
+  font-size: 19px;
+  font-family: sans-serif;
+  padding: 5px 0px 5px 10px;
+}
+@mixin price {
+  border: none;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  font-size: 16px;
+}
+@mixin performance {
+  font-size: 17px;
+  padding: 0px 0px 0px 10px;
+  font-family: sans-serif;
+  color: #8c8c8c;
+}
+@mixin button {
+  border: 1px solid black;
+  padding: 10px 10px;
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

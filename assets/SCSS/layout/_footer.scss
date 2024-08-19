@@ -1,0 +1,109 @@
+footer {
+  .container {
+    .flex {
+      background-color: yellow;
+      padding: 80px 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .footer-title {
+        display: flex;
+        gap: 50px;
+        span {
+          font-family: $sans;
+          font-size: 40px;
+        }
+        button {
+          background-color: black;
+          color: white;
+          padding: 20px 30px;
+          font-size: 20px;
+          font-family: $sans;
+          border: none;
+        }
+      }
+    }
+    .footer {
+      padding-top: 70px;
+      .footer-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .list {
+          display: flex;
+          gap: 50px;
+          .main {
+            color: adjust-color($color: #2c2c2c);
+            li {
+              padding-top: 10px;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          ul {
+            list-style: none;
+            font-size: 18px;
+            font-family: $sans;
+            li {
+              h5 {
+                font-family: $sans;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .end-pdng {
+      padding-top: 50px;
+      .footer-end {
+        padding: 50px 50px 50px 50px;
+        background-color: #282c31;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        color: #d3d7da;
+        font-family: $sans;
+      }
+      .copyright {
+        color: #d3d7da;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  footer {
+    .container {
+      .flex {
+        .footer-title {
+          span {
+            font-size: 18px;
+            width: 100%;
+          }
+          button {
+            padding: 10px 20px;
+            font-size: 12px;
+          }
+        }
+      }
+      .footer {
+        .footer-home {
+          .list {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,816 @@
+.flex-end {
+  display: flex;
+  justify-content: end;
+  padding: 10px 20px 0px 0px;
+}
+.flex-end .header-top .top-ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  color: #8c8c8c;
+  font-family: monospace;
+}
+.flex-end .header-top .top-ul li:hover {
+  text-decoration: underline;
+}
+
+.row-padding {
+  display: flex;
+  padding: 10px 0px 0px 0px;
+}
+.row-padding .logo-adidas {
+  width: 60px;
+  padding: 0px 0px 0px 40px;
+}
+.row-padding .header-menu .menu-ul {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: black;
+  padding: 30px 0px 0px 0px;
+}
+.row-padding .header-menu .menu-ul li:hover .dropdown {
+  display: block;
+}
+.row-padding .header-menu .menu-ul a {
+  text-decoration: none;
+  color: black;
+}
+.row-padding .header-menu .menu-ul .dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  height: 517px;
+}
+.row-padding .header-menu .menu-ul .dropdown ul {
+  list-style: none;
+}
+.row-padding .header-menu .menu-ul .dropdown .dp-text {
+  display: flex;
+  padding: 50px 100px 0px 100px;
+  gap: 100px;
+  font-size: 14px;
+}
+.row-padding .header-menu .menu-ul .dropdown .dp-text li {
+  margin-bottom: 10px;
+}
+.row-padding .header-menu .menu-ul .dropdown .dp-text li:hover {
+  text-decoration: underline;
+}
+.row-padding .header-menu .menu-ul .dropdown .dp-text .bold {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.row-padding .header-menu .menu-ul .dropdown .dp-text .gray {
+  color: #8c8c8c;
+}
+.row-padding .header-menu .menu-ul .dropdown .dp-text .down {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  gap: 120px;
+  padding: 0px 0px 0px 100px;
+}
+.row-padding .header-menu .flyout {
+  color: #8c8c8c;
+  font-family: monospace;
+  font-size: 20px;
+}
+.row-padding .end-menu {
+  display: flex;
+  gap: 20px;
+  padding: 15px 0px 0px 0px;
+}
+.row-padding .end-menu .search-input {
+  position: relative;
+}
+.row-padding .end-menu .search-input input {
+  border: 1px solid #eceff1;
+  padding: 0 35px 0 10px;
+  height: 32px;
+}
+.row-padding .end-menu .search-input svg {
+  position: absolute;
+  right: 0;
+  top: 23%;
+  padding: 0px 8px 0px 0px;
+}
+.row-padding .end-menu .header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.responsive {
+  display: none;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  header {
+    display: none;
+  }
+  .responsive {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+  .responsive .left-icon {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+  }
+  .responsive .center {
+    position: relative;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    padding-left: 50px;
+  }
+  .responsive .right-icon {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding: 10px 10px 10px 10px;
+  }
+}
+.advertisement {
+  padding: 10px 0px 0px 0px;
+}
+
+.advertisement-texts h1 {
+  position: absolute;
+  top: 83%;
+  left: 90px;
+  background-color: white;
+  font-family: sans-serif;
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;
+  font-size: 25px;
+}
+.advertisement-texts p {
+  position: absolute;
+  top: 88%;
+  left: 90px;
+  background-color: white;
+  font-family: sans-serif;
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;
+}
+.advertisement-texts .text-3 {
+  display: flex;
+}
+.advertisement-texts .text-3 .men {
+  position: absolute;
+  left: 90px;
+  top: 93%;
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+.advertisement-texts .text-3 .women {
+  position: absolute;
+  left: 230px;
+  top: 93%;
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+.advertisement-texts .text-3 .kids {
+  position: absolute;
+  left: 395px;
+  top: 93%;
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .advertisement-texts {
+    display: none;
+  }
+}
+.shop {
+  padding: 50px 100px;
+}
+.shop .shop-title {
+  display: flex;
+  gap: 10px;
+}
+.shop .shop-title .new {
+  border: 1px solid black;
+  padding: 10px 10px;
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.shop .shop-title .new:hover {
+  background-color: black;
+  color: white;
+}
+.shop .shop-title .best {
+  border: 1px solid black;
+  padding: 10px 10px;
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.shop .shop-title .best:hover {
+  background-color: black;
+  color: white;
+}
+.shop .shop-title .all {
+  text-decoration: underline;
+  color: black;
+  padding: 7px 0px;
+  text-align: center;
+  font-size: 24px;
+}
+.shop .shop-title .all:hover {
+  background-color: black;
+  color: white;
+}
+.shop .shop-home {
+  padding: 20px 0px 0px 0px;
+}
+.shop .shop-home .shop-1:hover {
+  border: 1px solid black;
+}
+.shop .shop-home .shop-1:hover .price-1 {
+  top: 156%;
+}
+.shop .shop-home .shop-1 .sneaker-1 {
+  position: relative;
+}
+.shop .shop-home .shop-1 .hearts-1 .full-heart-1 {
+  position: absolute;
+  top: 120%;
+  left: 25%;
+}
+.shop .shop-home .shop-1 .hearts-1 .heart-1 {
+  position: absolute;
+  top: 120%;
+  left: 25%;
+}
+.shop .shop-home .shop-1 .hearts-1 .heart-1:hover {
+  display: none;
+}
+.shop .shop-home .shop-1 .hearts-1 .heart-1:hover .love-1 {
+  display: flex;
+}
+.shop .shop-home .shop-1 .price-1 {
+  border: none;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 157%;
+  left: 7%;
+}
+.shop .shop-home .shop-1 .shop-1-title {
+  padding: 0px 0px 10px 10px;
+}
+.shop .shop-home .shop-1 .shop-1-title .ultraboost-1 {
+  font-size: 19px;
+  font-family: sans-serif;
+  padding: 5px 0px 5px 10px;
+}
+.shop .shop-home .shop-1 .shop-1-title .pfrmnc-1 {
+  font-size: 17px;
+  padding: 0px 0px 0px 10px;
+  font-family: sans-serif;
+  color: #8c8c8c;
+}
+.shop .shop-home .sneaker-2 {
+  position: relative;
+}
+.shop .shop-home .shop-2:hover {
+  border: 1px solid black;
+}
+.shop .shop-home .shop-2:hover .price-2 {
+  top: 156%;
+}
+.shop .shop-home .shop-2 .hearts-2 .full-heart-2 {
+  position: absolute;
+  top: 120%;
+  left: 47%;
+}
+.shop .shop-home .shop-2 .hearts-2 .heart-2 {
+  position: absolute;
+  top: 120%;
+  left: 47%;
+}
+.shop .shop-home .shop-2 .hearts-2 .heart-2:hover {
+  display: none;
+}
+.shop .shop-home .shop-2 .hearts-2 .heart-2:hover .love-1 {
+  display: flex;
+}
+.shop .shop-home .shop-2 .price-2 {
+  border: none;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 157%;
+  left: 29%;
+}
+.shop .shop-home .shop-2 .shop-2-title {
+  padding: 0px 0px 10px 10px;
+}
+.shop .shop-home .shop-2 .shop-2-title .ultraboost-2 {
+  font-size: 19px;
+  font-family: sans-serif;
+  padding: 5px 0px 5px 10px;
+}
+.shop .shop-home .shop-2 .shop-2-title .pfrmnc-2 {
+  font-size: 17px;
+  padding: 0px 0px 0px 10px;
+  font-family: sans-serif;
+  color: #8c8c8c;
+}
+.shop .shop-home .sneaker-3 {
+  position: relative;
+}
+.shop .shop-home .shop-3:hover {
+  border: 1px solid black;
+}
+.shop .shop-home .shop-3:hover .price-3 {
+  top: 156%;
+}
+.shop .shop-home .shop-3 .hearts-3 .full-heart-3 {
+  position: absolute;
+  top: 120%;
+  left: 69%;
+}
+.shop .shop-home .shop-3 .hearts-3 .heart-3 {
+  position: absolute;
+  top: 120%;
+  left: 69%;
+}
+.shop .shop-home .shop-3 .hearts-3 .heart-3:hover {
+  display: none;
+}
+.shop .shop-home .shop-3 .hearts-3 .heart-3:hover .love-1 {
+  display: flex;
+}
+.shop .shop-home .shop-3 .price-3 {
+  border: none;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 157%;
+  left: 51%;
+}
+.shop .shop-home .shop-3 .shop-3-title {
+  padding: 0px 0px 10px 10px;
+}
+.shop .shop-home .shop-3 .shop-3-title .ultraboost-3 {
+  font-size: 19px;
+  font-family: sans-serif;
+  padding: 5px 0px 5px 10px;
+}
+.shop .shop-home .shop-3 .shop-3-title .pfrmnc-3 {
+  font-size: 17px;
+  padding: 0px 0px 0px 10px;
+  font-family: sans-serif;
+  color: #8c8c8c;
+}
+.shop .shop-home .sneaker-4 {
+  position: relative;
+}
+.shop .shop-home .shop-4:hover {
+  border: 1px solid black;
+}
+.shop .shop-home .shop-4:hover .price-4 {
+  top: 156%;
+}
+.shop .shop-home .shop-4 .hearts-4 .full-heart-4 {
+  position: absolute;
+  top: 120%;
+  left: 90%;
+}
+.shop .shop-home .shop-4 .hearts-4 .heart-4 {
+  position: absolute;
+  top: 120%;
+  left: 90%;
+}
+.shop .shop-home .shop-4 .hearts-4 .heart-4:hover {
+  display: none;
+}
+.shop .shop-home .shop-4 .hearts-4 .heart-4:hover .love-1 {
+  display: flex;
+}
+.shop .shop-home .shop-4 .price-4 {
+  border: none;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 157%;
+  left: 73%;
+}
+.shop .shop-home .shop-4 .shop-4-title {
+  padding: 0px 0px 10px 10px;
+}
+.shop .shop-home .shop-4 .shop-4-title .ultraboost-4 {
+  font-size: 19px;
+  font-family: sans-serif;
+  padding: 5px 0px 5px 10px;
+}
+.shop .shop-home .shop-4 .shop-4-title .pfrmnc-4 {
+  font-size: 17px;
+  padding: 0px 0px 0px 10px;
+  font-family: sans-serif;
+  color: #8c8c8c;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  #shop .container .shop {
+    padding: 20px 10px 0px 10px;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 {
+    width: 50%;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-1 .full-heart-1 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-1 .heart-1 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-1 .price-1 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-1 .shop-1-title .ultraboost-1 {
+    font-size: 13px;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-1 .shop-1-title .pfrmnc-1 {
+    font-size: 13px;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 {
+    width: 50%;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-2 .full-heart-2 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-2 .heart-2 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-2 .price-2 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-2 .shop-2-title .ultraboost-2 {
+    font-size: 13px;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-2 .shop-2-title .pfrmnc-2 {
+    font-size: 13px;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 {
+    width: 50%;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-3 .full-heart-3 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-3 .heart-3 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-3 .price-3 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-3 .shop-3-title .ultraboost-3 {
+    font-size: 13px;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-3 .shop-3-title .pfrmnc-3 {
+    font-size: 13px;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 {
+    width: 50%;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-4 .full-heart-4 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-4 .heart-4 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-4 .price-4 {
+    display: none;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-4 .shop-4-title .ultraboost-4 {
+    font-size: 13px;
+  }
+  #shop .container .shop .shop-home .row .col-sm-6 .shop-4 .shop-4-title .pfrmnc-4 {
+    font-size: 13px;
+  }
+}
+.now {
+  padding: 50px 40px 0px 40px;
+}
+.now h3 {
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.now p {
+  font-family: sans-serif;
+  color: #8c8c8c;
+  width: 60%;
+  font-size: 15px;
+  padding: 10px 0px 10px 0px;
+}
+.now span {
+  text-decoration: underline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.now span:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  #sneakers .container .row .col-sm-6 {
+    width: 50%;
+  }
+  #sneakers .container .row .col-sm-6 h3 {
+    font-size: 15px;
+  }
+  #sneakers .container .row .col-sm-6 p {
+    font-size: 15px;
+    width: 90%;
+  }
+  #sneakers .container .row .col-sm-6 span {
+    font-size: 15px;
+  }
+}
+#popular {
+  padding: 100px 50px;
+}
+#popular .container .popular-title {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#popular .container .popular-home {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  padding-top: 30px;
+}
+#popular .container .popular-home .text {
+  padding-top: 50px;
+}
+#popular .container .popular-home .text h1 {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+}
+#popular .container .popular-home .text hr {
+  border-top: 1px solid black;
+  width: 95%;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  #popular .container .popular-title {
+    font-size: 20px;
+  }
+  #popular .container .popular-home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #popular .container .popular-home .text h1 {
+    font-size: 25px;
+  }
+  #popular .container .popular-home .text hr {
+    width: 90%;
+  }
+}
+#summer {
+  padding: 100px 50px 60px 50px;
+}
+#summer .container .summer-home {
+  display: flex;
+  gap: 170px;
+  justify-content: center;
+  align-items: center;
+}
+#summer .container .summer-home .none {
+  list-style: none;
+  font-size: 18px;
+}
+#summer .container .summer-home .none h3 {
+  font-family: sans-serif;
+}
+#summer .container .summer-home .none li {
+  padding-top: 25px;
+  color: #1a1919;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  #summer .container .summer-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  #summer .container .summer-home .none {
+    font-size: 15px;
+  }
+}
+#about .container .about-text {
+  padding: 50px 0px 50px 0px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#about .container .about-text h1 {
+  font-family: sans-serif;
+  font-size: 33px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .container .about-text p {
+  padding-top: 10px;
+  width: 45%;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#about .container .about-text .about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  #about .container .about-text h1 {
+    font-size: 30px;
+  }
+  #about .container .about-text p {
+    font-size: 20px;
+    width: 95%;
+  }
+}
+footer .container .flex {
+  background-color: yellow;
+  padding: 80px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .flex .footer-title {
+  display: flex;
+  gap: 50px;
+}
+footer .container .flex .footer-title span {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+footer .container .flex .footer-title button {
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border: none;
+}
+footer .container .footer {
+  padding-top: 70px;
+}
+footer .container .footer .footer-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .footer .footer-home .list {
+  display: flex;
+  gap: 50px;
+}
+footer .container .footer .footer-home .list .main {
+  color: #2c2c2c;
+}
+footer .container .footer .footer-home .list .main li {
+  padding-top: 10px;
+}
+footer .container .footer .footer-home .list .main li:hover {
+  text-decoration: underline;
+}
+footer .container .footer .footer-home .list ul {
+  list-style: none;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+footer .container .footer .footer-home .list ul li h5 {
+  font-family: sans-serif;
+  font-size: 23px;
+}
+footer .container .end-pdng {
+  padding-top: 50px;
+}
+footer .container .end-pdng .footer-end {
+  padding: 50px 50px 50px 50px;
+  background-color: #282c31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .end-pdng ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  color: #d3d7da;
+  font-family: sans-serif;
+}
+footer .container .end-pdng .copyright {
+  color: #d3d7da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  footer .container .flex .footer-title span {
+    font-size: 18px;
+    width: 100%;
+  }
+  footer .container .flex .footer-title button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  footer .container .footer .footer-home .list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+.now {
+  padding: 50px 40px 0px 40px;
+  h3 {
+    font-family: $sans;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  p {
+    font-family: $sans;
+    color: $gray;
+    width: 60%;
+    font-size: 15px;
+    padding: 10px 0px 10px 0px;
+  }
+  span {
+    text-decoration: underline;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  #sneakers {
+    .container {
+      .row {
+        .col-sm-6 {
+          width: 50%;
+          h3 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 15px;
+            width: 90%;
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

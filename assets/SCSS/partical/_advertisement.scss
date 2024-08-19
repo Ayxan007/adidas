@@ -1,0 +1,47 @@
+.advertisement {
+  padding: 10px 0px 0px 0px;
+}
+.advertisement-texts {
+  h1 {
+    position: absolute;
+    top: 83%;
+    left: 90px;
+    background-color: #ffff;
+    font-family: $sans;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    font-size: 25px;
+  }
+  p {
+    position: absolute;
+    top: 88%;
+    left: 90px;
+    background-color: #ffff;
+    font-family: $sans;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+  }
+  .text-3 {
+    display: flex;
+    .men {
+      position: absolute;
+      left: 90px;
+      @include text;
+    }
+    .women {
+      position: absolute;
+      left: 230px;
+      @include text;
+    }
+    .kids {
+      position: absolute;
+      left: 395px;
+      @include text;
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  .advertisement-texts {
+    display: none;
+  }
+}
